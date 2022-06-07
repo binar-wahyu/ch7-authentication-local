@@ -6,6 +6,7 @@ const passport = require("./lib/passport");
 const { PORT = 8000 } = process.env;
 
 app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 app.use(
   session({
